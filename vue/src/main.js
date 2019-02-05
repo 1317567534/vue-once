@@ -7,11 +7,14 @@ import myaxios from '../src/assets/js/myaxios.js'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/index.css'
+import bread from './components/layout/bread.vue'
 
 Vue.config.productionTip = false
 
 Vue.use(Element)
 Vue.use(myaxios)
+
+Vue.component(bread.name, bread)
 
 /* eslint-disable no-new */
 new Vue({
